@@ -1,7 +1,7 @@
 import streamlit as st
 import os
 from langchain_groq import ChatGroq
-from langchain_community.embeddings import OllamaEmbeddings
+from langchain_ollama import OllamaEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain.prompts import ChatPromptTemplate
@@ -32,7 +32,7 @@ Question : {input}
 
 def create_vector_embedding():
     if "vectors" not in st.session_state:
-        st.session_state.embeddings = OllamaEmbeddings()
+        st.session_state.embeddings = OllamaEmbeddings(model="llama3.2")
         st.session_state.loader = PyPDFDirectoryLoader("research_papers")
         st.session_state.docs = st.session_state.loader.load()
         st.session_state.text_splitter=RecursiveCharacterTextSplitter(chunk_size=1000,chunk_overlap=200)

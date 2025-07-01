@@ -10,3 +10,4 @@ langchain_huggingface
 bs4
 streamlit
 pypdf
+langchain-ollama
