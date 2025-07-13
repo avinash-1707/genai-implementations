@@ -11,3 +11,6 @@ bs4
 streamlit
 pypdf
 langchain-ollama
+arxiv
+wikipedia
+faiss-cpu
