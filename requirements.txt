@@ -14,3 +14,4 @@ langchain-ollama
 arxiv
 wikipedia
 faiss-cpu
+duckduckgo-search
