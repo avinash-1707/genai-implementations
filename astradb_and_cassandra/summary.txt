@@ -1,0 +1,13 @@
+Apache Cassandra is a distributed NoSQL database designed for high availability, fault tolerance, and scalability.
+You define a keyspace (like a database), and tables (with column families), then read/write using CQL (Cassandra Query Language — similar to SQL).
+
+Astra DB is a fully managed cloud database built on Apache Cassandra, provided by DataStax (the company behind Cassandra).
+Think of Astra DB as to Cassandra what Firebase is to Firestore or Supabase is to PostgreSQL.
+
+Astra DB now supports vector embeddings + metadata storage, meaning you can:
+
+Store and search document embeddings (like Pinecone or Qdrant)
+
+Use normal Cassandra tables for chat history or user sessions
+
+Use REST/GraphQL APIs — easy integration

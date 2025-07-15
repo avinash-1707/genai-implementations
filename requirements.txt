@@ -20,3 +20,4 @@ youtube_transcript_api
 unstructured
 numexpr
 huggingface_hub
+gradio
