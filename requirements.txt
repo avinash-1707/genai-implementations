@@ -15,3 +15,6 @@ arxiv
 wikipedia
 faiss-cpu
 duckduckgo-search
+validators
+youtube_transcript_api
+unstructured
